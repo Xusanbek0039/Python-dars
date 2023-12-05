@@ -14,7 +14,7 @@
 
 
 
-# Kod_2
+# # Kod_2
 # class Person:
 #   def __init__(self, name, age):
 #     self.name = name
@@ -28,7 +28,7 @@
 
 
 
-# Kod_3
+# # Kod_3
 # class Person:
 #     def __init__(self, name, age):
 #         self.name = name
@@ -44,7 +44,7 @@
 
 
 
-# Kod_4
+# # Kod_4
 # class Person:
 #   def __init__(self, name, age):
 #     self.name = name
@@ -86,7 +86,7 @@
 
 
 
-# Kod_6
+# # Kod_6
 # class Person:
 #   def __init__(self, name, age):
 #     self.name = name
@@ -98,6 +98,15 @@
 
 # p1 = Person("Xusan", '18')
 # p1.myfunc()
+
+
+
+
+
+
+
+
+
 
 
 
@@ -125,7 +134,7 @@
 
 
 
-# kod_8
+# # kod_8
 # class Person:
 #   def __init__(self, name, age):
 #     self.name = name
@@ -141,7 +150,25 @@
 # print(p1.name)
 
 
-# Taxlil uchun kod 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # Taxlil uchun kod 
 # class Animal:
 #     def __init__ (self, name, age):
 #         self.name = name
