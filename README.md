@@ -3,7 +3,7 @@ Python darsliklari
 
 # Mundarija
 
-1-dars(https://github.com/Xusanbek0071/Python-dars/blob/main/Dars_2/Darslik/Darslik%202.docx)
+1-dars [https://github.com/Xusanbek0071/Python-dars/blob/main/Dars_2/Darslik/Darslik%202.docx]
 
 [2-dars](https://github.com/Xusanbek0071/Python-dars/tree/main/Dars_2)
 
