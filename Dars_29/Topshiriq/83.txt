@@ -1,0 +1,5 @@
+NumPy kutubxonasidan foydalangan holda ufunc yani Nomerli Python kutubxonasining funksiyalari 
+bilan ishloovchi funksiyalardan foydalangan holda kod yozing. Kodingizda qo'shish, ayirish
+bo'lish hamda ko'paytirish metodlaridan foydalaning. Consolga quyidagicha javob chiqishi lozim
+Ufunc mod metodi qaytarga javob:  [ "siz kiritgan sonlar uyg'inligi"]
+qolgan metodlar ham huddi shu ko'rinishda chop etilishi lozim.

@@ -1,0 +1,5 @@
+paython kutubxonalari haqida ya'ni shu vaqtgacha ishlatgan kutubxonalariz haqida umumiy malumot to'plang 
+hamda to'plagan malumotlaringizga tayangan holda kod yozing. kodingiz ishlash prinsipi quyidagicha bo'lsin 
+yani misol uchun kutubxona nomini kiriting deb so'ralsin hamda biz biron bir kutubxona nomini kiritgan
+vaqtimizda aytaylik NumPy nomini kiritdik hamda Enter tugmasini bosgan vaqtimizda bizga dastur NumPy 
+kutubxonasi xaqida siz to'plagan malumotlarni chiqarib bersin. Kutubxonalar maximal soni 4 tadan kam bo'lmasligi lozim!

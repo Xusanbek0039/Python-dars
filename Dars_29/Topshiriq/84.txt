@@ -1,0 +1,14 @@
+Dastur yozing yozgan dasturingizda kamida 20 shaxsga ta'luqli bo'lgan malumot saqlansiz
+hamda kodni ishga tushirganda bizdan Kimning malumotlari kerak bolsa ismini kiriting deb so'ralsin
+bir kishining ismi kiritilib enter tugmasi bosilgandan so'ng misol uchun:
+Kimning malumotlar kerak bo'lsa ismini kiriting: Abror
+Abror haqida malumotlar : 
+Alimov Abror Alisherovich to'liq ism familiyasi.
+Yashsh joyi: 
+Toshkent shaxri, Uchtepa tumani, Xondamir mahallasi 1- xonadon
+Xonadon telefon raqami:
++998 97 707 7077
+Shaxsiy telefon raqami:
++998 97 707 7078
+Bazada bor malumotlar hozircha shular.
+Yana malumot kerakmi(ha/yoq):
