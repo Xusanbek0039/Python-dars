@@ -1,3 +1,15 @@
+# code 
+gap = "yashna gulla xur o'zbekiston!"
+print(gap.title())
+print(gap.capitalize())
+print(gap.upper())
+print(gap.lower())
+
+
+
+
+
+
 # 1-code
 # a = 10
 # print(a)
