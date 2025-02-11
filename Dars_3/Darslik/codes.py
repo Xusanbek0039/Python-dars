@@ -1,9 +1,9 @@
 # code 
-gap = "yashna gulla xur o'zbekiston!"
-print(gap.title())
-print(gap.capitalize())
-print(gap.upper())
-print(gap.lower())
+# gap = "yashna gulla xur o'zbekiston!"
+# print(gap.title())
+# print(gap.capitalize())
+# print(gap.upper())
+# print(gap.lower())
 
 
 
@@ -62,3 +62,20 @@ print(gap.lower())
 
 
 # 6-code 
+# ism = input("Ismingizni kiriting: ")
+# print("Assalom alekum ",ism)
+
+
+
+
+
+
+
+
+
+
+
+
+# 7-code 
+# ism = input("Ismingizni kiriting: ")
+# print(f"Assalom alekum {ism.title()}")
