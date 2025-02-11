@@ -77,5 +77,5 @@
 
 
 # 7-code 
-# ism = input("Ismingizni kiriting: ")
-# print(f"Assalom alekum {ism.title()}")
+ism = input("Ismingizni kiriting: \n")
+print(f"Assalom alekum {ism.title()}")
