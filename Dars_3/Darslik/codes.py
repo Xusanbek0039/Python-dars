@@ -40,3 +40,13 @@
 # 5-code 
 # meva = "        banan           "
 # print("Men "+meva.strip()+" ni yaxshi ko'raman!")
+
+
+
+
+
+
+
+
+
+# 6-code 
