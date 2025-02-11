@@ -9,3 +9,11 @@
 
 
 # 2-code 
+meva = "        banan           "
+print("Men "+meva+" ni yaxshi ko'raman!")
+
+
+
+
+
+
