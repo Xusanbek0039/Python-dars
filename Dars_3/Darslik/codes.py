@@ -1,9 +1,12 @@
-# code 
-# gap = "yashna gulla xur o'zbekiston!"
-# print(gap.title())
-# print(gap.capitalize())
+# code
+# matin ishlovchi funksiyalar  
+# gap = "Yashna gulla xur o'zbekiston!"
+# print(gap.title())  
+# print(gap.capitalize())  
 # print(gap.upper())
 # print(gap.lower())
+
+
 
 
 
@@ -20,18 +23,23 @@
 
 
 
+
+
 # 2-code 
 # meva = "        banan           "
-# print("Men "+meva+" ni yaxshi ko'raman!")
+# print("Men "+meva+"ni yaxshi ko'raman!")
 
 
 
 
 
 
-# 3-code 
+
+
+
+# # 3-code 
 # meva = "        banan           "
-# print("Men "+meva.rstrip()+" ni yaxshi ko'raman!")
+# print("Men "+meva.rstrip()+"ni yaxshi ko'raman!")
 
 
 
@@ -63,7 +71,7 @@
 
 # 6-code 
 # ism = input("Ismingizni kiriting: ")
-# print("Assalom alekum ",ism)
+# print("Assalom alekum ",ism,",Xush kelibsiz!")
 
 
 
@@ -79,3 +87,4 @@
 # 7-code 
 # ism = input("Ismingizni kiriting: \n")
 # print(f"Assalom alekum {ism.title()}")
+
