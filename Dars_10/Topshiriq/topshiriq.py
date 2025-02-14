@@ -15,6 +15,27 @@ Aks holda → "F"
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # scores = int(input("Baxoni kiriting: "))
 
 # for score in scores:
@@ -75,12 +96,41 @@ sanaydigan dastur yozing.
 
 
 
-text = "Python dasturlash tili"  
-vowels = "aeiouAEIOU"  
-count = 0  
+# text = "Python dasturlash tili"  
+# vowels = "aeiouAEIOU"  
+# count = 0  
 
-for char in text:  
-    if char in vowels:  
-        count += 1  
+# for char in text:  
+#     if char in vowels:  
+#         count += 1  
 
-print("Unli harflar soni:", count)  
+# print("Unli harflar soni:", count)  
+
+
+
+
+
+
+
+
+"""
+4-masala
+Berilgan ro‘yxatdagi sonlarning o‘rtacha qiymatini hisoblovchi dastur yozing.
+"""
+
+
+
+
+
+
+
+
+
+# numbers = [12, 45, 78, 34, 56, 89, 23]  
+# sum_numbers = 0  
+
+# for num in numbers:  
+#     sum_numbers += num  
+
+# average = sum_numbers / len(numbers)  
+# print("O‘rtacha qiymat:", average)  
