@@ -96,15 +96,15 @@ sanaydigan dastur yozing.
 
 
 
-# text = "Python dasturlash tili"  
-# vowels = "aeiouAEIOU"  
-# count = 0  
+matin = "Python dasturlash tili"  
+unlilar = "aeiouAEIOU"  
+son = 0  
 
-# for char in text:  
-#     if char in vowels:  
-#         count += 1  
+for raqam in matin:  
+    if raqam in unlilar:  
+        son += 1  
 
-# print("Unli harflar soni:", count)  
+print("Unli harflar soni:", son)  
 
 
 
