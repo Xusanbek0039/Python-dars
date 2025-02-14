@@ -3,7 +3,7 @@
 # List quyidagicha yaratiladi:
 # mevalar = ['olma', 'anjir', 'shaftoli', "o'rik"]  # mevalar ro'yxati (matnlar)
 # narhlar = [12000, 18000, 10900, 22000]  # narhlar ro'yxati (sonlar)
-# sonlar = ['bir', 'ikki', 3, 4, 5]  # sonlar va matnlar aralash ro'yxat
+# sonlar = ['bir', 'ikki', 3, 4, 5, 5.5]  # sonlar va matnlar aralash ro'yxat
 # ismlar = []  # bo'sh ro'yxat
 
 
@@ -23,6 +23,9 @@
 # mevalar = ['olma', 'anjir', 'shaftoli', "o'rik"] # mevalar ro'yxati (matnlar)
 # print("Birinchi meva: ", mevalar[0])
 # print("Ikkinchi meva: ", mevalar[1])
+# print(mevalar)
+
+
 
 
 
@@ -138,7 +141,7 @@
 # # .insert() metodi
 # cars = ['Lacetti', 'Nexia 3', 'Cobalt']
 # cars.insert(0, 'Malibu') # 1-o'ringa yangi qiymat qo'shamiz
-# print(cars)A
+# print(cars)
 # cars.insert(2, 'Damas') # 3-o'ringa yangi qiymat qo'shamiz
 # print(cars)
 
@@ -175,11 +178,17 @@
 
 
 
+
+
+
 # Kod_11
 # # .remove() metodi 
 # mevalar = ['olma', 'anjir', 'shaftoli', "o'rik", 'anor']
 # mevalar.remove('shaftoli') # Ro'yxatdan shaftolini o'chirdik
 # print(mevalar)
+
+
+
 
 
 
@@ -216,3 +225,6 @@
 # mahsulot = bozorlik.pop(3) # Ro'yxatdan banan ni sug'urib olamiz
 # print("Men " + mahsulot + " sotib oldim")
 # print("Olinmagan mahsulotlar: ", bozorlik)
+
+
+
