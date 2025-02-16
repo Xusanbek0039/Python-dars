@@ -1,8 +1,12 @@
 # # Kod_1
 # # RO'YXATNI TARTIBLASH 
+
+
 # cars = ['bmw','mercedes benz', 'volvo', 'general motors', 'tesla', 'audi']
 # cars.sort()
 # print(cars)
+
+
 
 
 
@@ -38,9 +42,10 @@
 
 
 
+
 # # Kod_3
 # cars = ['bmw','mercedes benz', 'volvo', 'general motors', 'tesla', 'audi']
-# cars.sort(reverse=True)
+# cars.sort(reverse=False)
 # print(cars)
 
 
@@ -155,7 +160,7 @@
 
 
 # # Kod_9
-# sonlar = list(range(0,10)) #
+# sonlar = list(range(5,20,2)) 
 # print(sonlar)
 
 
@@ -240,7 +245,6 @@
 
 # # KOd_13
 # cars = ['bmw','mercedes benz', 'volvo', 'general motors', 'tesla', 'audi']
-# my_cars = cars[0:3] # 0-indeskdan boshlab 3 ta element ajratib olamiz
 # print(cars[2:5]) # 2-3-4-elementlarni ajratib olamiz (5 kirmaydi)
 
 
@@ -261,7 +265,6 @@
 
 # # Kod_14
 # cars = ['bmw','mercedes benz', 'volvo', 'general motors', 'tesla', 'audi']
-# my_cars = cars[0:3] # 0-indeskdan boshlab 3 ta element ajratib olamiz
 # print(cars[:4]) # Ro'yxat boshidan 4-gacha kesadi (0,1,2,3)
 # print(cars[2:]) # 2-elementdan boshlab ro'yxat oxirigacha kesib oladi
 
@@ -384,3 +387,13 @@ toys.remove('bus')
 toys[1] = 'mcqueen'
 toys = tuple(toys) # Ro'yxatni qaytadan o'zgarmas ro'yxatga (Tuple) aylantiramiz
 print(toys)
+
+
+
+
+
+
+
+
+
+
