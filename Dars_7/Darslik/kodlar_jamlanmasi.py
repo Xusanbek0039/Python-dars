@@ -1,7 +1,14 @@
 # # Kod_1
-# mehmonlar = ['Ali','Vali','Hasan', 'Husan','Olim']
-# for mehmon in mehmonlar:
+# Mehmonlar = ['Ali','Vali','Hasan', 'Husan','Olim']
+# for mehmon in Mehmonlar:
 #     print(mehmon)
+# print(Mehmonlar)
+
+
+
+
+
+
 
 
 
@@ -15,11 +22,19 @@
 
 
 
+
+
+
+
 # # Kod_3
 # mehmonlar = ['Ali','Vali','Hasan', 'Husan','Olim']
 # for mehmon in mehmonlar:
-# print(f"Hurmatli {mehmon}, sizni 20 Dekabr kuni nahorga oshga taklif qilamiz")
-# print("Hurmat bilan, Palonchiyevlar oilasi\n")
+#     print(f"Hurmatli {mehmon}, sizni 20 Dekabr kuni nahorga oshga taklif qilamiz")
+#     print("Hurmat bilan, Palonchiyevlar oilasi\n")
+
+
+
+
 
 
 
@@ -33,11 +48,25 @@
 
 
 
+
+
+
+
+
+
+
 # # Kod_5
 # mehmonlar = ['Ali','Vali','Hasan', 'Husan','Olim']
 # for mehmon in mehmonlar:
 #     print(mehmon)
-#     print(mehmonlar) # bu qator tsikl tashqarisida bo'lishi kerak edi  
+# print(mehmonlar) # bu qator tsikl tashqarisida bo'lishi kerak edi  
+
+
+
+
+
+
+
 
 
 
@@ -51,10 +80,25 @@
 
 
 
+
+
+
+
+
+
+
+
 # # Kod_7
 # sonlar = list(range(1,11))
 # for son in sonlar:
 #     print(f"{son} ning kvadrati {son**2} ga teng")
+
+
+
+
+
+
+
 
 
 
@@ -66,6 +110,10 @@
 #     sonlar_kvadrati.append(son**2) # uning kv.ni hisoblab, sonlar_kvadrati ga yuklaymiz
 # print(sonlar)
 # print(sonlar_kvadrati)
+
+
+
+
 
 
 
