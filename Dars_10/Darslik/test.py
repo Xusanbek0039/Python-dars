@@ -48,3 +48,5 @@
 
 
 # 6-masala
+soz = input("So‘z kiriting: ")
+print(soz[::-1])
