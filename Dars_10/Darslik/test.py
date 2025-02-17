@@ -36,12 +36,36 @@
 
 
 
+
+
+
+
+
+
+
+
 # 5-masala
-# n = int(input("Nechta Fibonachchi soni kerak? "))
-# fib = [0, 1]
-# for i in range(2, n):
-#     fib.append(fib[-1] + fib[-2])
-# print(fib[:n])
+n = int(input("Nechta Fibonachchi soni kerak? "))
+fib = [0, 1]
+for i in range(2, n):
+    fib.append(fib[-1] + fib[-2])
+print(fib[:n])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -79,23 +103,23 @@
 
 
 # 10-masala
-# Oila a'zolarining ro‘yxatini yaratamiz
-my_family = ["Ali", "Vali", "Hasan", "Husan", "Olim"]
+# # Oila a'zolarining ro‘yxatini yaratamiz
+# my_family = ["Ali", "Vali", "Hasan", "Husan", "Olim"]
 
-# Oila a'zolarining ismlarini ekranga chiqaramiz
-print("Oila a'zolari:")
-for ism in my_family:
-    print(ism)
+# # Oila a'zolarining ismlarini ekranga chiqaramiz
+# print("Oila a'zolari:")
+# for ism in my_family:
+#     print(ism)
 
-# Nechta oila a'zosi borligini hisoblaymiz
-print(f"\nOilamizda {len(my_family)} ta a'zo bor.")
+# # Nechta oila a'zosi borligini hisoblaymiz
+# print(f"\nOilamizda {len(my_family)} ta a'zo bor.")
 
-# Ro‘yxatni alifbo bo‘yicha tartiblaymiz
-sorted_family = sorted(my_family)
-print("\nAlifbo tartibida:")
-print(sorted_family)
+# # Ro‘yxatni alifbo bo‘yicha tartiblaymiz
+# sorted_family = sorted(my_family)
+# print("\nAlifbo tartibida:")
+# print(sorted_family)
 
-# Ro‘yxatni teskari tartibda chiqaramiz
-print("\nTeskari tartibda:")
-print(sorted(my_family, reverse=True))
+# # Ro‘yxatni teskari tartibda chiqaramiz
+# print("\nTeskari tartibda:")
+# print(sorted(my_family, reverse=True))
 
