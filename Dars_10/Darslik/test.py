@@ -11,6 +11,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 2-masala
 # n = int(input("Son kiriting: "))
 # print(f"Kvadrat: {n**2}, Kub: {n**3}")
@@ -45,11 +63,11 @@
 
 
 # 5-masala
-# n = int(input("Nechta Fibonachchi soni kerak? "))
-# fib = [0, 1]
-# for i in range(2, n):
-#     fib.append(fib[-1] + fib[-2])
-# print(fib[:n])
+n = int(input("Nechta Fibonachchi soni kerak? "))
+fib = [0, 1]
+for i in range(2, n):
+    fib.append(fib[-1] + fib[-2])
+print(fib[:n])
 
 
 
@@ -72,8 +90,8 @@
 
 
 # 6-masala
-soz = input("So‘z kiriting: ")
-print(soz[::-1])
+# soz = input("So‘z kiriting: ")
+# print(soz[::-1])
 
 
 
