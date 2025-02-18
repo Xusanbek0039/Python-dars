@@ -1,11 +1,14 @@
 # # 1-kod
 # yosh = int(input('Yoshingiz nechida? '))
-# if yosh<=4:
+# if yosh <= 4:
 #    print('Sizga kirish bepul.')
-# elif yosh<=12:
+# elif yosh <= 12:
 #    print('Sizga kirish 5000 so\'m')
 # else:
 #    print('Sizga kirish 10000 so\'m')
+
+
+
 
 
 
@@ -24,6 +27,9 @@
 # else:
 #    price = 10000
 # print(f"Sizga kirish {price} so'm")
+
+
+
 
 
 
@@ -83,7 +89,7 @@
 
 
 # # Kod_5
-# kun = input("Bugun nima kun?>>>")
+# kun = input("Bugun nima kun?>>> ")
 # if kun.lower()=='shanba' or kun.lower()=='yakshanba':
 #    print('Bugun dam olish kuni.')
 # else:
@@ -104,12 +110,16 @@
 
 
 # # Kod_6
-# kun = input("Bugun nima kun?")
-# harorat = float(input("Havo harorati qanday?"))
-# if kun.lower()=='yakshanba' and harorat>=30:
+# kun = input("Bugun nima kun? ")
+# harorat = float(input("Havo harorati qanday? "))
+# if kun.lower()=='yakshanba' and harorat >= 30:
 #    print("Cho'milgani ketdik!")
 # elif kun.lower()=='yakshanba' and harorat<30:
 #    print("Uyda dam olamiz!")
+# elif kun.lower()=='shanba' and harorat >= 30:
+#    print("Cho'milgani ketdik!")
+# else:
+#    print("Bugun ish kuni ekan!")
 
 
 
@@ -123,8 +133,8 @@
 
 
 # # Kod_7
-# kun = input("Bugun nima kun?")
-# harorat = float(input("Havo harorati qanday?"))
+# kun = input("Bugun nima kun? ")
+# harorat = float(input("Havo harorati qanday? "))
 # if (kun.lower()=='shanba' or kun.lower()=='yakshanba') and harorat>=30:
 #    print("Cho'milgani ketdik!")
 # elif (kun.lower()=='shanba' or kun.lower()=='yakshanba') and harorat<30:
@@ -148,8 +158,8 @@
 
 # # Kod_8
 # narh = 15000 # mijoz 15000 so'mga taom oldi.
-# choy = True # mijoz choy ham oldi
-# salat = False # mijoz salat olmadi
+# choy = False # mijoz choy ham oldi
+# salat = True # mijoz salat olmadi
 
 # if choy and salat: # agar mijoz choy ham salat ham olgan bo'lsa
 #    narh = narh + 10000 # narhga 10000 so'm qo'shamiz
@@ -176,7 +186,7 @@
 # salat = False
 # non = True
 # kompot = True
-# assorti = False
+# assorti = True
 # #Quyidagi har bir shart alohida tekshiriladi va bir-biriga bog'liq emas
 # if choy:   # agar choy olsa
 #    print("Mijoz choy oldi.")
@@ -212,11 +222,11 @@
 
 # # Kod_10
 # menu = ['osh','qazonkabob','shashlik','norin','somsa']
-# ovqat = input('Nima ovqat yeysiz?>>>')
+# ovqat = input('Nima ovqat yeysiz?>>> ')
 # if ovqat.lower() in menu:
 #    print('Buyurtma qabul qilindi.')
 # else:
-#    print('Afsuski bizda bunday ovqat yo\'q')
+#    print(f"Afsuski siz buyurgan {ovqat.title()} bizning taomnomamizda mavjud emas!")
 
 
 
@@ -255,7 +265,7 @@
 
 # # Kod_12
 # menu = ['osh','qazonkabob','shashlik','norin','somsa']
-# buyurtmalar = ["osh","somsa","manti", "shashlik"]                               4-list
+# buyurtmalar = ["osh","somsa","manti", "shashlik"]                               
 
 # for taom in buyurtmalar:
 #    if taom in menu:
@@ -279,7 +289,7 @@
 
 # # Kod_13
 # menu = ['osh','qazonkabob','shashlik','norin','somsa']
-# buyurtmalar = ["osh","somsa","manti", "shashlik"]
+# buyurtmalar = []
 
 # if buyurtmalar: # ro'yxatda biror element bo'lsa bu ifoda TRUE qaytaradi
 #    for taom in buyurtmalar:
