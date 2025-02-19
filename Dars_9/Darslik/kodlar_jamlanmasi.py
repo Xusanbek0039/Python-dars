@@ -2,8 +2,10 @@
 # yosh = int(input('Yoshingiz nechida? '))
 # if yosh <= 4:
 #    print('Sizga kirish bepul.')
+   
 # elif yosh <= 12:
 #    print('Sizga kirish 5000 so\'m')
+   
 # else:
 #    print('Sizga kirish 10000 so\'m')
 
@@ -18,15 +20,19 @@
 
 
 
-# # kod_2
+# kod_2
 # yosh = int(input('Yoshingiz nechida? '))
-# if yosh<=4:
-#    price = 0
-# elif yosh<=12:
-#    price = 5000
+
+# if yosh <= 4:
+#    x = 0
+   
+# elif yosh <= 12:
+#    x = 5_000
+   
 # else:
-#    price = 10000
-# print(f"Sizga kirish {price} so'm")
+#    x = 10_000
+   
+# print(f"Sizga kirish {x} so'm")
 
 
 
@@ -40,14 +46,16 @@
 
 # # kod_3
 # yosh = int(input('Yoshingiz nechida? '))
-# if yosh<=4: # yosh bolalarga bepul
+# if yosh <= 4: # yosh bolalarga bepul
 #    price = 0
-# elif yosh<=12: # 4 dan 12 yoshgacha 5000 so'm
+# elif yosh <= 12: # 4 dan 12 yoshgacha 5000 so'm
 #    price = 5000
-# elif yosh<65: # 12 dan katta va 65 dan kichiklarga narh 10000 so'm
+# elif yosh < 65: # 12 dan katta va 65 dan kichiklarga narh 10000 so'm
 #    price = 10000
-# else: # qariyalarga esa 8000 so'm
+# elif yosh < 90: # qariyalarga esa 8000 so'm
 #    price = 8000
+# else:
+#     price = 15_000
 # print(f"Sizga kirish {price} so'm")
 
 
@@ -90,10 +98,15 @@
 
 # # Kod_5
 # kun = input("Bugun nima kun?>>> ")
-# if kun.lower()=='shanba' or kun.lower()=='yakshanba':
-#    print('Bugun dam olish kuni.')
+
+# if kun.lower() == 'shanba' or kun.lower() == 'yakshanba':
+#    print(f"Bugun {kun.title()}, dam olish kuni.")
+   
+# elif kun.lower() == 'dushanba' or kun.lower() == 'seshanba' or kun.lower() == 'chorshanba' or kun.lower() == 'payshanba' or kun.lower() == "juma":
+#     print(f"Bugun {kun.title()}, ish kuni!")
+    
 # else:
-#    print('Bugun ish kuni.')
+#    print('Siz xafta kunini kiritishda xatolikka yo`l qo`ydingiz!')
 
 
 
@@ -114,12 +127,18 @@
 # harorat = float(input("Havo harorati qanday? "))
 # if kun.lower()=='yakshanba' and harorat >= 30:
 #    print("Cho'milgani ketdik!")
+   
 # elif kun.lower()=='yakshanba' and harorat<30:
 #    print("Uyda dam olamiz!")
+   
 # elif kun.lower()=='shanba' and harorat >= 30:
 #    print("Cho'milgani ketdik!")
+   
 # else:
 #    print("Bugun ish kuni ekan!")
+
+
+
 
 
 
@@ -135,9 +154,11 @@
 # # Kod_7
 # kun = input("Bugun nima kun? ")
 # harorat = float(input("Havo harorati qanday? "))
-# if (kun.lower()=='shanba' or kun.lower()=='yakshanba') and harorat>=30:
+
+# if (kun.lower()=='shanba' or kun.lower()=='yakshanba') and harorat >= 30:
 #    print("Cho'milgani ketdik!")
-# elif (kun.lower()=='shanba' or kun.lower()=='yakshanba') and harorat<30:
+   
+# elif (kun.lower()=='shanba' or kun.lower()=='yakshanba') and harorat < 30:
 #    print("Uyda dam olamiz!")
 
 
@@ -157,8 +178,8 @@
 
 
 # # Kod_8
-# narh = 15000 # mijoz 15000 so'mga taom oldi.
-# choy = False # mijoz choy ham oldi
+# narh = 15_000 # mijoz 15000 so'mga taom oldi.
+# choy = True # mijoz choy ham oldi
 # salat = True # mijoz salat olmadi
 
 # if choy and salat: # agar mijoz choy ham salat ham olgan bo'lsa
@@ -289,7 +310,7 @@
 
 # # Kod_13
 # menu = ['osh','qazonkabob','shashlik','norin','somsa']
-# buyurtmalar = []
+# buyurtmalar = ['osh',"manti"]
 
 # if buyurtmalar: # ro'yxatda biror element bo'lsa bu ifoda TRUE qaytaradi
 #    for taom in buyurtmalar:
@@ -299,3 +320,19 @@
 #            print(f"Kechirasiz, menuda {taom} yo'q")
 # else: # agar ro'yxat bo'sh bo'lsa
 #    print("Savatchangiz bo'sh!")
+#############################################################################
+n = int(input("Hurmatli mijoz siz nechta taom buyurtma qilmoqchisiz\t"))
+menu = ['osh','shashlik','manti','somsa','qozonkabob','tandir','shorva']
+buyurtmalar = []
+for i in range(0,n):
+    buyurtma = input(f"{i+1}-buyurtmani kiriting:\t")
+    buyurtmalar.append(buyurtma.lower())
+
+
+for taom in buyurtmalar:
+    if taom in menu:
+        print(f"\nSiz kiritgan {taom.title()} taomiga buyurtma berildi!")
+    else:
+        print(f"\nSiz kiritgan {taom.title()} taomi afsuski bizda mavjud emas!")
+        
+print(f"\nSiz {len(buyurtmalar)} ta buyurtma berdingiz!")
