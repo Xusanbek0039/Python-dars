@@ -309,17 +309,17 @@
 
 
 # # Kod_13
-# menu = ['osh','qazonkabob','shashlik','norin','somsa']
-# buyurtmalar = ['osh',"manti"]
+menu = ['osh','qazonkabob','shashlik','norin','somsa']
+buyurtmalar = ['osh',"manti"]
 
-# if buyurtmalar: # ro'yxatda biror element bo'lsa bu ifoda TRUE qaytaradi
-#    for taom in buyurtmalar:
-#        if taom in menu:
-#            print(f"Menuda {taom} bor")
-#        else:
-#            print(f"Kechirasiz, menuda {taom} yo'q")
-# else: # agar ro'yxat bo'sh bo'lsa
-#    print("Savatchangiz bo'sh!")
+if buyurtmalar: # ro'yxatda biror element bo'lsa bu ifoda TRUE qaytaradi
+   for taom in buyurtmalar:
+       if taom in menu:
+           print(f"Menuda {taom} bor")
+       else:
+           print(f"Kechirasiz, menuda {taom} yo'q")
+else: # agar ro'yxat bo'sh bo'lsa
+   print("Savatchangiz bo'sh!")
 #############################################################################
 n = int(input("Hurmatli mijoz siz nechta taom buyurtma qilmoqchisiz\t"))
 menu = ['osh','shashlik','manti','somsa','qozonkabob','tandir','shorva']
