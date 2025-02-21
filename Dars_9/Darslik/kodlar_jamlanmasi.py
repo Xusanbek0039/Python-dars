@@ -48,15 +48,26 @@
 # yosh = int(input('Yoshingiz nechida? '))
 # if yosh <= 4: # yosh bolalarga bepul
 #    price = 0
+#    print(f"Sizga kirish {price} so'm")
+
 # elif yosh <= 12: # 4 dan 12 yoshgacha 5000 so'm
 #    price = 5000
+#    print(f"Sizga kirish {price} so'm")
+
 # elif yosh < 65: # 12 dan katta va 65 dan kichiklarga narh 10000 so'm
 #    price = 10000
+#    print(f"Sizga kirish {price} so'm")
+
 # elif yosh < 90: # qariyalarga esa 8000 so'm
 #    price = 8000
-# else:
+#    print(f"Sizga kirish {price} so'm")
+
+# elif yosh <120 :
 #     price = 15_000
-# print(f"Sizga kirish {price} so'm")
+#     print(f"Sizga kirish {price} so'm")
+
+# else:
+#     print("Siz xato yosh kiritdingiz!")
 
 
 
@@ -98,7 +109,6 @@
 
 # # Kod_5
 # kun = input("Bugun nima kun?>>> ")
-
 # if kun.lower() == 'shanba' or kun.lower() == 'yakshanba':
 #    print(f"Bugun {kun.title()}, dam olish kuni.")
    
@@ -125,14 +135,18 @@
 # # Kod_6
 # kun = input("Bugun nima kun? ")
 # harorat = float(input("Havo harorati qanday? "))
+
 # if kun.lower()=='yakshanba' and harorat >= 30:
 #    print("Cho'milgani ketdik!")
    
-# elif kun.lower()=='yakshanba' and harorat<30:
+# elif kun.lower()=='yakshanba' and harorat < 30:
 #    print("Uyda dam olamiz!")
    
 # elif kun.lower()=='shanba' and harorat >= 30:
 #    print("Cho'milgani ketdik!")
+   
+# elif kun.lower()=='shanba' and harorat < 30:
+#    print("Uyda dam olamiz ekan!")
    
 # else:
 #    print("Bugun ish kuni ekan!")
@@ -160,6 +174,8 @@
    
 # elif (kun.lower()=='shanba' or kun.lower()=='yakshanba') and harorat < 30:
 #    print("Uyda dam olamiz!")
+# else:
+#    print("Bugun ish kuni!")
 
 
 
@@ -179,14 +195,15 @@
 
 # # Kod_8
 # narh = 15_000 # mijoz 15000 so'mga taom oldi.
-# choy = True # mijoz choy ham oldi
-# salat = True # mijoz salat olmadi
+# choy = False # mijoz choy ham oldi
+# salat = False # mijoz salat olmadi
 
 # if choy and salat: # agar mijoz choy ham salat ham olgan bo'lsa
 #    narh = narh + 10000 # narhga 10000 so'm qo'shamiz
 # elif choy or salat: # agar choy yoki salat olgan bo'lsa
 #    narh = narh + 5000 # narhga 5000 so'm qo'shamiz
-#    print(f"Jami {narh} so'm") # yakuniy narhni chiqaramiz                                 
+
+# print(f"Jami {narh} so'm") # yakuniy narhni chiqaramiz                                 
 
 
 
@@ -310,7 +327,7 @@
 
 # # Kod_13
 # menu = ['osh','qazonkabob','shashlik','norin','somsa']
-# buyurtmalar = ['osh',"manti"]
+# buyurtmalar = ['osh','suv']
 
 # if buyurtmalar: # ro'yxatda biror element bo'lsa bu ifoda TRUE qaytaradi
 #    for taom in buyurtmalar:
@@ -320,19 +337,51 @@
 #            print(f"Kechirasiz, menuda {taom} yo'q")
 # else: # agar ro'yxat bo'sh bo'lsa
 #    print("Savatchangiz bo'sh!")
-#############################################################################
-n = int(input("Hurmatli mijoz siz nechta taom buyurtma qilmoqchisiz\t"))
-menu = ['osh','shashlik','manti','somsa','qozonkabob','tandir','shorva']
-buyurtmalar = []
-for i in range(0,n):
-    buyurtma = input(f"{i+1}-buyurtmani kiriting:\t")
-    buyurtmalar.append(buyurtma.lower())
+   
+   
+
+# menu = ['osh','somsa','shashlik','lavash','kabob','chuchvara']
+# buyurtmalar = []
+# narx = 0
+# x = int(input("Hurmatli mijoz, nechta taom buyurasiz:\t"))
+# for i in range(0,x):
+#    buyurtma = input(f"{i+1}-buyurtmani kiriting:\t")
+#    buyurtma = buyurtma.strip()
+#    buyurtma = buyurtma.lower()
+#    buyurtmalar.append(buyurtma)
+
+# if buyurtmalar:
+#    for taom in buyurtmalar:
+#       if taom in menu:
+#          print(f"\nSizning {taom.title()} nomli buyurtmangiz qabul qilindi!")
+#       else:
+#          print(f"Sizning {taom.title()} nomli buyurtmangiz mavjud emas!")
+      
+# else:
+#    print("Savatchangiz bo'sh!")
+   
+# for a in buyurtmalar:
+#    if a == "osh":
+#       narx += 10_000
+#    if a == "somsa":
+#       narx += 15_000 
+#    if a == "shashlik":
+#       narx += 20_000
+#    if a == "lavash":
+#       narx += 25_000
+#    if a == "kabob":
+#       narx += 30_000
+#    if a == "chuchvara":
+#       narx += 35_000
+      
+# print(f"\nSizning buyurtmalar soningiz: {len(buyurtmalar)}")
+# print(f"Sizning to'lovingiz: {narx}")
 
 
-for taom in buyurtmalar:
-    if taom in menu:
-        print(f"\nSiz kiritgan {taom.title()} taomiga buyurtma berildi!")
-    else:
-        print(f"\nSiz kiritgan {taom.title()} taomi afsuski bizda mavjud emas!")
-        
-print(f"\nSiz {len(buyurtmalar)} ta buyurtma berdingiz!")
+
+
+
+
+
+
+
