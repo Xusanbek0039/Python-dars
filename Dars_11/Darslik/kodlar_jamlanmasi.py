@@ -1,11 +1,10 @@
 # # Kod_1
 
 # f = {
-# "brand": "Ford",
-# "model": "Mustang",
-# "year": 1964
+#     "brand": "Ford",
+#     "model": "Mustang",
+#     "year": 1964
 # }
-
 # print(f)
 
 
@@ -21,7 +20,7 @@
 # "model": "Mustang",
 # "year": 1964
 # }
-# print(f["brand"])
+# print(f["model"])
 
 
 
@@ -60,7 +59,6 @@
 # f = {
 # "brand": "Ford",
 # "model": "Mustang",
-# "year": 1964,
 # "year": 2020
 # }
 # print(len(f))
@@ -117,6 +115,7 @@
 # # Kod_7
 # f = {
 # "brand": "Ford",
+# "model": "Mustang",
 # "electric": False,
 # "year": 1964,
 # "colors": ["red", "white", "blue"]
@@ -213,11 +212,11 @@
 #     "colors": ["red", "white", "blue"]
 # }
 
-# if "model" in f:
-#     print("Model nomli kalit mavjud!")
+# if "brand" in f:
+#     print("Brand nomli kalit mavjud!")
 #     # update() lug'atni eski qiymat bilan alishtirish:
 # f.update({"year": 2023})
-
+# print(f["year"])
 
 
 
@@ -240,7 +239,7 @@
 # "colors": ["red", "white", "blue"]
 # }
 
-# f["color"] = “red”
+# f["color"] = "red"
 # print(f)
 
 
@@ -260,7 +259,7 @@
 # "colors": ["red", "white", "blue"]
 # }
 
-# f.pop("model")
+# f.pop("brand")
 # print(f)
 
 
@@ -284,7 +283,7 @@
 # "colors": ["red", "white", "blue"]
 # }
 
-# f.poptime()
+# f.popitem()
 # print(f)
 
 
@@ -390,7 +389,7 @@
 # }
 
 # for i in f.values():
-# print(i)
+#     print(i)
 
 
 
@@ -416,7 +415,7 @@
 
 
 # for t,e in f.items():
-# print(t,e)
+#     print(t,e)
 
 
 
