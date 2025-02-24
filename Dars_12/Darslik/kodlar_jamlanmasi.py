@@ -61,7 +61,6 @@
 # "brand": "Ford",
 # "model": "Mustang",
 # "year": 1964,
-# "year": 2020
 # }
 # print(len(f))
 
@@ -99,7 +98,7 @@
 # "year": 1964,
 # "colors": ["red", "white", "blue"]
 # }
-# x= f[model]
+# x= f["brand"]
 # print(x)
 
 
@@ -121,7 +120,7 @@
 # "year": 1964,
 # "colors": ["red", "white", "blue"]
 # }
-# c = f.get("model")
+# c = f.get("colors")
 # print(c)
 
 
@@ -213,10 +212,13 @@
 #     "colors": ["red", "white", "blue"]
 # }
 
-# if "model" in f:
-#     print("Model nomli kalit mavjud!")
+# if "year" in f:
+#     print("year nomli kalit mavjud!")
+# else:
+#     print("year nomli kalit mavjud emas!")
 #     # update() lug'atni eski qiymat bilan alishtirish:
 # f.update({"year": 2023})
+# print(f)
 
 
 
@@ -240,8 +242,12 @@
 # "colors": ["red", "white", "blue"]
 # }
 
-# f["color"] = “red”
+# f["probeg"] = 10000
 # print(f)
+
+
+
+
 
 
 
@@ -260,7 +266,7 @@
 # "colors": ["red", "white", "blue"]
 # }
 
-# f.pop("model")
+# f.pop("brand")
 # print(f)
 
 
@@ -277,15 +283,20 @@
 
 # # Kod_14
 
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
+f = {
+"brand": "Ford",
+"electric": False,
+"year": 1964,
+"colors": ["red", "white", "blue"]
+}
 
+<<<<<<< Updated upstream
 # f.popitem()
 # print(f)
+=======
+f.popitime()
+print(f)
+>>>>>>> Stashed changes
 
 
 
