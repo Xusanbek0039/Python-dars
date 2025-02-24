@@ -284,7 +284,7 @@
 # "colors": ["red", "white", "blue"]
 # }
 
-# f.poptime()
+# f.popitem()
 # print(f)
 
 
@@ -390,7 +390,7 @@
 # }
 
 # for i in f.values():
-# print(i)
+#     print(i)
 
 
 
@@ -416,7 +416,7 @@
 
 
 # for t,e in f.items():
-# print(t,e)
+#     print(f"Kalit: {t} Qiymat: {e}")
 
 
 
