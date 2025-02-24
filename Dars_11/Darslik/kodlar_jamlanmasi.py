@@ -3,9 +3,13 @@
 # f = {
 #     "brand": "Ford",
 #     "model": "Mustang",
-#     "year": 1964
+#     "year": 1964,
+#     "rang": "Qora"
 # }
 # print(f)
+
+
+
 
 
 
@@ -55,11 +59,12 @@
 
 
 
-# # Kod-4
+# # # Kod-4
 # f = {
 # "brand": "Ford",
 # "model": "Mustang",
-# "year": 2020
+# "year": 2020,
+# "year": 2025
 # }
 # print(len(f))
 
@@ -97,7 +102,7 @@
 # "year": 1964,
 # "colors": ["red", "white", "blue"]
 # }
-# x= f[model]
+# x= f["year"]
 # print(x)
 
 
@@ -115,10 +120,10 @@
 # # Kod_7
 # f = {
 # "brand": "Ford",
-# "model": "Mustang",
 # "electric": False,
 # "year": 1964,
-# "colors": ["red", "white", "blue"]
+# "colors": ["red", "white", "blue"],
+# "model": None
 # }
 # c = f.get("model")
 # print(c)
@@ -234,12 +239,13 @@
 # # Kod_12
 # f = {
 # "brand": "Ford",
+# "model": "Mustang",
 # "electric": False,
 # "year": 1964,
 # "colors": ["red", "white", "blue"]
 # }
 
-# f["color"] = "red"
+# f["tezlik"] = 100
 # print(f)
 
 
@@ -326,8 +332,6 @@
 # }
 
 # f.clear() #ro’yxatni tozalash uchun ishlatilinadi:
-
-
 # print(f)
 
 
@@ -413,10 +417,13 @@
 # "colors": ["red", "white", "blue"]
 # }
 
-
 # for t,e in f.items():
-#     print(t,e)
-
+#     if t == "colors":
+#         print(f"{t}")
+#         for rang in e:
+#             print(f"          -{rang}")
+#     else:
+#         print(f"{t} {e}")
 
 
 
@@ -464,15 +471,15 @@
 # myfamily = {
 #     "child": {
 #         "name": "Xusanbek",
-#         "year": 2005
+#         "year": 2004
 #     },
 #     "child2": {
 #         "name": "Kamola",
-#         "year": 2002
+#         "year": 2001
 #     },
 #     "child3": {
 #         "name": "Fotima",
-#         "year": 2005
+#         "year": 2004
 #     }
 # }
 
@@ -511,3 +518,8 @@
 #     "child2": child2,
 #     "child3": child3
 # }
+
+
+
+
+
