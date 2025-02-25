@@ -1,12 +1,15 @@
 # # Kod_1
 
 # f = {
-# "brand": "Ford",
-# "model": "Mustang",
-# "year": 1964
+#     "brand": "Ford",
+#     "model": "Mustang",
+#     "year": 1964,
+#     "rang": "Qora"
 # }
-
 # print(f)
+
+
+
 
 
 
@@ -21,7 +24,7 @@
 # "model": "Mustang",
 # "year": 1964
 # }
-# print(f["brand"])
+# print(f["model"])
 
 
 
@@ -56,12 +59,12 @@
 
 
 
-# # Kod-4
+# # # Kod-4
 # f = {
 # "brand": "Ford",
 # "model": "Mustang",
-# "year": 1964,
-# "year": 2020
+# "year": 2020,
+# "year": 2025
 # }
 # print(len(f))
 
@@ -99,7 +102,7 @@
 # "year": 1964,
 # "colors": ["red", "white", "blue"]
 # }
-# x= f[model]
+# x= f["year"]
 # print(x)
 
 
@@ -119,7 +122,8 @@
 # "brand": "Ford",
 # "electric": False,
 # "year": 1964,
-# "colors": ["red", "white", "blue"]
+# "colors": ["red", "white", "blue"],
+# "model": None
 # }
 # c = f.get("model")
 # print(c)
@@ -213,11 +217,11 @@ print(b)
 #     "colors": ["red", "white", "blue"]
 # }
 
-# if "model" in f:
-#     print("Model nomli kalit mavjud!")
+# if "brand" in f:
+#     print("Brand nomli kalit mavjud!")
 #     # update() lug'atni eski qiymat bilan alishtirish:
 # f.update({"year": 2023})
-
+# print(f["year"])
 
 
 
@@ -235,12 +239,13 @@ print(b)
 # # Kod_12
 # f = {
 # "brand": "Ford",
+# "model": "Mustang",
 # "electric": False,
 # "year": 1964,
 # "colors": ["red", "white", "blue"]
 # }
 
-# f["color"] = “red”
+# f["tezlik"] = 100
 # print(f)
 
 
@@ -260,7 +265,7 @@ print(b)
 # "colors": ["red", "white", "blue"]
 # }
 
-# f.pop("model")
+# f.pop("brand")
 # print(f)
 
 
@@ -284,7 +289,7 @@ print(b)
 # "colors": ["red", "white", "blue"]
 # }
 
-# f.poptime()
+# f.popitem()
 # print(f)
 
 
@@ -327,8 +332,6 @@ print(b)
 # }
 
 # f.clear() #ro’yxatni tozalash uchun ishlatilinadi:
-
-
 # print(f)
 
 
@@ -390,7 +393,7 @@ print(b)
 # }
 
 # for i in f.values():
-# print(i)
+#     print(i)
 
 
 
@@ -414,10 +417,13 @@ print(b)
 # "colors": ["red", "white", "blue"]
 # }
 
-
 # for t,e in f.items():
-# print(t,e)
-
+#     if t == "colors":
+#         print(f"{t}")
+#         for rang in e:
+#             print(f"          -{rang}")
+#     else:
+#         print(f"{t} {e}")
 
 
 
@@ -465,15 +471,15 @@ print(b)
 # myfamily = {
 #     "child": {
 #         "name": "Xusanbek",
-#         "year": 2005
+#         "year": 2004
 #     },
 #     "child2": {
 #         "name": "Kamola",
-#         "year": 2002
+#         "year": 2001
 #     },
 #     "child3": {
 #         "name": "Fotima",
-#         "year": 2005
+#         "year": 2004
 #     }
 # }
 
@@ -512,3 +518,8 @@ print(b)
 #     "child2": child2,
 #     "child3": child3
 # }
+
+
+
+
+
