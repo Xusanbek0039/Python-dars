@@ -141,15 +141,15 @@
 
 
 # # Kod_8
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
+f = {
+"brand": "Ford",
+"electric": False,
+"year": 1964,
+"colors": ["red", "white", "blue"]
+}
 
-# b = f.keys()
-# print(b)
+b = f.keys()
+print(b)
 
 
 
