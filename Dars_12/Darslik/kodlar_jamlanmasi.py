@@ -1,12 +1,38 @@
 # # Kod_1
-
-# f = {
-# "brand": "Ford",
-# "model": "Mustang",
-# "year": 1964
+# car0 = {
+#     'model': 'lacetti',
+#     'rang': 'oq',
+#     'yil': 2018,
+#     'narh': 13000,
+#     'km': 50000,
+#     'korobka': 'avtomat'
 # }
 
-# print(f)
+# car1 = {
+#     'model': 'nexia 3',
+#     'rang': 'qora',
+#     'yil': 2015,
+#     'narh': 9000,
+#     'km': 89000,
+#     'korobka': 'mexanika'
+# }
+
+# car2 = {
+#     'model': 'gentra',
+#     'rang': 'qizil',
+#     'yil': 2019,
+#     'narh': 15000,
+#     'km': 20000,
+#     'korobka': 'mexanika'
+# }
+
+
+
+
+
+
+
+
 
 
 
@@ -16,53 +42,97 @@
 
 # # Kod_2
 
-# f = {
-# "brand": "Ford",
-# "model": "Mustang",
-# "year": 1964
+# car0 = {
+#     'model': 'lacetti',
+#     'rang': 'oq',
+#     'yil': 2018,
+#     'narh': 13000,
+#     'km': 50000,
+#     'korobka': 'avtomat'
 # }
-# print(f["brand"])
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_3
-
-# f = {
-# "brand": "Ford",
-# "model": "Mustang",
-# "year": 1964,
-# "year": 2020
+# car1 = {
+#     'model': 'nexia 3',
+#     'rang': 'qora',
+#     'yil': 2015,
+#     'narh': 9000,
+#     'km': 89000,
+#     'korobka': 'mexanika'
 # }
-# print(f)
 
-
-
-
-
-
-
-
-
-
-
-# # Kod-4
-# f = {
-# "brand": "Ford",
-# "model": "Mustang",
-# "year": 1964,
+# car2 = {
+#     'model': 'gentra',
+#     'rang': 'qizil',
+#     'yil': 2019,
+#     'narh': 15000,
+#     'km': 20000,
+#     'korobka': 'mexanika'
 # }
-# print(len(f))
+
+
+# car = car0
+# print(f"{car['model'].title()},\
+#   {car['rang']} rang,\
+#   {car['yil']}-yil, {car['narh']}$")
+
+# car = car1
+# print(f"{car['model'].title()},\
+#   {car['rang']} rang,\
+#   {car['yil']}-yil, {car['narh']}$")
+
+# car = car2
+# print(f"{car['model'].title()},\
+#   {car['rang']} rang,\
+#   {car['yil']}-yil, {car['narh']}$")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Kod_3
+# malibus=[] # Malibu mashinalari uchun bo'sh ro'yxat yaratdik
+# for n in range(10):
+#     new_car = { # har bir yangi mashina uchun lug'at yaratamiz
+#         'model':'malibu',
+#         'rang':None, # rangi noaniq
+#         'yil':2020,
+#         'narh':None, # narhi belgilanmagan
+#         'km':0,
+#         'korobka':'avto'
+#         }
+#     malibus.append(new_car) # yangi lug'atni ro'yxatga qo'shamiz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # Kod_4
+# for malibu in malibus[:3]:
+#     malibu['rang']='qizil'
+
+
 
 
 
@@ -74,13 +144,8 @@
 
 
 # # Kod_5
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-# print(type(f))
+# for malibu in malibus[3:6]:
+#     malibu['rang']='qora'
 
 
 
@@ -91,15 +156,16 @@
 
 
 
-# # KOd_6
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-# x= f["brand"]
-# print(x)
+
+
+
+
+
+# # Kod_6
+# for malibu in malibus[6:]: # ohirgi 4 ta mashinani
+#     malibu['rang']='qora'  # rangi qora
+#     malibu['korobka']='mexanika' # korobkasi mexanika
+
 
 
 
@@ -114,16 +180,9 @@
 
 
 # # Kod_7
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-# c = f.get("colors")
-# print(c)
-
-
+# for malibu in malibus[6:]: # ohirgi 4 ta mashinani
+#     malibu['rang']='qora'  # rangi qora
+#     malibu['korobka']='mexanika' # korobkasi mexanika
 
 
 
@@ -136,15 +195,11 @@
 
 
 # # Kod_8
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-
-# b = f.keys()
-# print(b)
+# for malibu in malibus:
+#     if malibu['korobka']=='avto':
+#         malibu['narh']=40000
+#     else:
+#         malibu['narh']=35000
 
 
 
@@ -155,371 +210,17 @@
 
 
 
-
+# 
 # # Kod_9
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
 
-# v = f.values()
-# print(v)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_10
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-
-# m = f.items()
-# print(m)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_11
-# f = {
-#     "brand": "Ford",
-#     "electric": False,
-#     "year": 1964,
-#     "colors": ["red", "white", "blue"]
-# }
-
-# if "year" in f:
-#     print("year nomli kalit mavjud!")
-# else:
-#     print("year nomli kalit mavjud emas!")
-#     # update() lug'atni eski qiymat bilan alishtirish:
-# f.update({"year": 2023})
-# print(f)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_12
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-
-# f["probeg"] = 10000
-# print(f)
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_13
-
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-
-# f.pop("brand")
-# print(f)
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_14
-
-f = {
-"brand": "Ford",
-"electric": False,
-"year": 1964,
-"colors": ["red", "white", "blue"]
-}
-
-<<<<<<< Updated upstream
-# f.popitem()
-# print(f)
-=======
-f.popitime()
-print(f)
->>>>>>> Stashed changes
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_15
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-
-# del f["year"]
-# print(f)
-
-
-
-
-
-
-
-
-
-
-
-# # Kod-16
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-
-# f.clear() #ro’yxatni tozalash uchun ishlatilinadi:
-
-
-# print(f)
-
-
-
-
-
-
-
-
-
-
-# # Kod_17
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-
-# for l in f:
-# 	print(l)
-
-
-
-
-
-
-
-
-# # Kod_18/
-
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-
-# for p in f:
-# 	print(f[p])
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_19
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-
-# for i in f.values():
-#     print(i)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_20
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-
-
-# for t,e in f.items():
-#     print(f"Kalit: {t} Qiymat: {e}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_21
-# f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
-# }
-
-# q = f.copy()
-# print(q)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_22
-
-# myfamily = {
-#     "child": {
-#         "name": "Xusanbek",
-#         "year": 2005
-#     },
-#     "child2": {
-#         "name": "Kamola",
-#         "year": 2002
-#     },
-#     "child3": {
-#         "name": "Fotima",
-#         "year": 2005
-#     }
-# }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_23
-
-# child1 = {
-#     "name": "Xusanbek",
-#     "year": 2005
-# }
-
-# child2 = {
-#     "name": "Kamola",
-#     "year": 2002
-# }
-
-# child3 = {
-#     "name": "Fotima",
-#     "year": 2005
-# }
-
-# myfamily = {
-#     "child1": child1,
-#     "child2": child2,
-#     "child3": child3
-# }
+# dasturchilar = {
+#     'ali':['python','c++'],
+#     'vali':['html','css','js'],
+#     'hasan':['php','sql'],
+#     'husan':['python','php'],
+#     'maryam':['c++','c#']}
+# for ism, tillar in dasturchilar.items():
+#     print(f"\n{ism.title()} quyidagi dasturlash tillarini biladi:")
+#     for til in tillar:
+#         print(til.upper())
