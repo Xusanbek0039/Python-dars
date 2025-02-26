@@ -70,10 +70,10 @@
 # }
 
 
-# car = car0
-# print(f"{car['model'].title()},\
-#   {car['rang']} rang,\
-#   {car['yil']}- yil, {car['narh']}$")
+
+# print(f"{car0['model'].title()},\
+#   {car0['rang']} rang,\
+#   {car0['yil']}- yil, {car0['narh']}$")
 
 # car = car1
 # print(f"{car['model'].title()},\
@@ -114,81 +114,29 @@
 #         'korobka':'avto'
 #         }
 #     malibus.append(new_car) # yangi lug'atni ro'yxatga qo'shamiz
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_4
+# # # Kod_4
 # for malibu in malibus[:3]:
 #     malibu['rang']='qizil'
 
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_5
+# # # # Kod_5
 # for malibu in malibus[3:6]:
 #     malibu['rang']='qora'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_6
+# # # Kod_6
 # for malibu in malibus[6:]: # ohirgi 4 ta mashinani
-#     malibu['rang']='qora'  # rangi qora
+#     malibu['rang']='yashil'  # rangi qora
 #     malibu['korobka']='mexanika' # korobkasi mexanika
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Kod_8
+# # # Kod_8
 # for malibu in malibus:
 #     if malibu['korobka']=='avto':
-#         malibu['narh']=40000
+#         malibu['narh'] = 14_000
 #     else:
-#         malibu['narh']=35000
+#         malibu['narh']= 12_000
 
 
 
-# print(malibus)
 
+# for k in malibus:
+#     print(f"{k["model"].title()}, Rangi: {k["rang"].title()}, Ishlab chiqarilgan yil: {k["yil"]}, Narxi: {k["narh"]}$, Probeg: {k["km"]}, O'tkazgich turi: {k["korobka"]}")
 
 
 
@@ -196,15 +144,14 @@
 
 
 # # Kod_9
-# dasturchilar = {
-#     'ali':['python','c++'],
-#     'vali':['html','css','js'],
-#     'hasan':['php','sql'],
-#     'husan':['python','php'],
-#     'maryam':['c++','c#']
-#     }
-# for ism, tillar in dasturchilar.items():
-#     print(f"\n{ism.title()} quyidagi dasturlash tillarini biladi:")
-#     for til in tillar:
-#         print(til.upper())
-
+dasturchilar = {
+    'ali':['python','c++'],
+    'vali':['html','css','js'],
+    'hasan':['php','sql'],
+    'husan':['python','php'],
+    'maryam':['c++','c#']
+    }
+for ism, tillar in dasturchilar.items():
+    print(f"\n{ism.title()} quyidagi dasturlash tillarini biladi:")
+    for til in tillar:
+        print(til.upper())
