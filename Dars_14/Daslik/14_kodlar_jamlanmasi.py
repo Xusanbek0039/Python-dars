@@ -1,8 +1,8 @@
 #Kod_1
 # i = 1   
-# while i<=6:
+# while i <= 6:
 #     print(i)
-#     i+=1
+#     i=i+1
 
 
 
@@ -19,13 +19,13 @@
 
 # #Kod_2    whileda masala 
 # print("Kiritilgan sonning kvadratini qaytaruvchi dastur.")
-# savol = "Istalgan son kiriting "
-# savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
 # qiymat = ''
 # while qiymat != 'exit':
-#     qiymat = input(savol)
+#     qiymat = input( "Istalgan son kiriting (dasturni to'xtatish uchun 'exit' deb yozing): ")
 #     if qiymat != 'exit':
 #         print(float(qiymat)**2)
+#     else:
+#         print("Dastur toxtadi!")
 
 
 
@@ -97,7 +97,7 @@
 # Kod_5     break operatori for da 
 # sonlar = list(range(1,11))
 # for son in sonlar: 
-#     if son == 5: # son 5 ga teng bo'lsa kod to'xtaydi
+#     if son == 9: # son 5 ga teng bo'lsa kod to'xtaydi
 #         break
 #     print(f"{son} ning kvadrati {son**2} ga teng")
 
@@ -123,14 +123,32 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 #Kod_7     while da contiune
 # son = 0
-# while son<10:
+# while son < 10:
 #     son += 1
-#     if son%2!=0:
+#     if son %2 != 0:
 #         continue
 #     else:
 #         print(son)
+
+
+
+
+
+
+
+
 
 
 
@@ -148,14 +166,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 #Kod_9
 # son = 0
-# while son<10:    
+# while son<10:
+
 #     if son%2!=0:
 #         continue
 #     else:
 #         print(son)
-#     # son += 1
+#     son += 1
 
 
 
@@ -171,3 +200,5 @@
 #         continue
 #     else:
 #         print(son)
+
+
