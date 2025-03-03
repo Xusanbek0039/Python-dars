@@ -22,6 +22,12 @@
 
 
 
+
+
+
+
+
+
 # kod_2
 
 
@@ -45,11 +51,28 @@
 
 
 
+
+
+
+
+
+
+
+
 # kod_3
 # cars = ['lacetti','nexia','toyota','nexia','audi','malibu','nexia']
 # while 'nexia' in cars: # toki nexia cars ro'yxati ichida ekan...
 #     cars.remove('nexia') # nexia ni ro'yxatdan olib tashla
 # print(cars)
+
+
+
+
+
+
+
+
+
 
 
 
