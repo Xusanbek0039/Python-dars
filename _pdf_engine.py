@@ -71,6 +71,25 @@ def _esc(t):
     return (t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
 
+def _inline(text):
+    """`code` va **bold** belgilarini xavfsiz HTML ga aylantiradi."""
+    import re
+    # 1) Kod spanlarini vaqtincha token bilan almashtiramiz (to'qnashuvni oldini olish)
+    spans = []
+    def _grab(m):
+        spans.append("<font name='Mono' size=10 color='#c0392b'>"
+                     + _esc(m.group(1)) + "</font>")
+        return "\x00%d\x00" % (len(spans) - 1)
+    tmp = re.sub(r"`(.+?)`", _grab, text)
+    # 2) Qolgan matnni escape qilamiz
+    tmp = _esc(tmp)
+    # 3) **bold**
+    tmp = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", tmp)
+    # 4) Kod spanlarini qaytaramiz
+    tmp = re.sub(r"\x00(\d+)\x00", lambda m: spans[int(m.group(1))], tmp)
+    return tmp
+
+
 class CodeBox(Flowable):
     """Kod blokini chiroyli ramka + fon bilan chizadi."""
     def __init__(self, code, width):
@@ -168,8 +187,7 @@ class PDFBuilder:
         canvas.line(doc.leftMargin, 14 * mm, w - doc.rightMargin, 14 * mm)
         canvas.setFont("UI", 8.5)
         canvas.setFillColor(LIGHT_GREY)
-        canvas.drawString(doc.leftMargin, 10 * mm,
-                          "© IT Shaharcha — Yoshlar Axborot Texnologiyalari Markazi")
+        canvas.drawString(doc.leftMargin, 10 * mm, "© IT Shaharcha")
         canvas.drawCentredString(w / 2, 10 * mm,
                                  f"{self.lesson_no}-dars: {self.topic}")
         canvas.drawRightString(w - doc.rightMargin, 10 * mm, f"{doc.page}-bet")
@@ -203,20 +221,11 @@ class PDFBuilder:
         self.story.append(Paragraph(_esc(text), styles["h3"]))
 
     def p(self, text):
-        # **bold** -> <b>
-        import re
-        t = _esc(text)
-        t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
-        t = re.sub(r"`(.+?)`", r"<font name='Mono' size=10 color='#c0392b'>\1</font>", t)
-        self.story.append(Paragraph(t, styles["p"]))
+        self.story.append(Paragraph(_inline(text), styles["p"]))
 
     def bullets(self, items):
-        import re
         for it in items:
-            t = _esc(it)
-            t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
-            t = re.sub(r"`(.+?)`", r"<font name='Mono' size=10 color='#c0392b'>\1</font>", t)
-            self.story.append(Paragraph(t, styles["bullet"], bulletText="•"))
+            self.story.append(Paragraph(_inline(it), styles["bullet"], bulletText="•"))
         self.story.append(Spacer(1, 3))
 
     def code(self, code, caption=None):
