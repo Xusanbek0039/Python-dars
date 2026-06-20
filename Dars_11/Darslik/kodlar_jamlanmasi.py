@@ -141,15 +141,15 @@
 
 
 # # Kod_8
-f = {
-"brand": "Ford",
-"electric": False,
-"year": 1964,
-"colors": ["red", "white", "blue"]
-}
+# f = {
+# "brand": "Ford",
+# "electric": False,
+# "year": 1964,
+# "colors": ["red", "white", "blue"]
+# }
 
-b = f.keys()
-print(b)
+# b = f.keys()
+# print(b)
 
 
 
@@ -187,10 +187,7 @@ print(b)
 
 # # Kod_10
 # f = {
-# "brand": "Ford",
-# "electric": False,
-# "year": 1964,
-# "colors": ["red", "white", "blue"]
+# "brand": "Ford","electric": False,"year": 1964,"colors": ["red", "white", "blue"]
 # }
 
 # m = f.items()
@@ -289,9 +286,9 @@ print(b)
 # "colors": ["red", "white", "blue"]
 # }
 
-# f.popitem()
+# x=f.popitem()
 # print(f)
-
+# print(x)
 
 
 
@@ -310,7 +307,7 @@ print(b)
 # "colors": ["red", "white", "blue"]
 # }
 
-# del f["year"]
+# del f["colors"]
 # print(f)
 
 
@@ -417,13 +414,13 @@ print(b)
 # "colors": ["red", "white", "blue"]
 # }
 
-# for t,e in f.items():
-#     if t == "colors":
-#         print(f"{t}")
-#         for rang in e:
-#             print(f"          -{rang}")
-#     else:
-#         print(f"{t} {e}")
+for t,e in f.items():
+    if t == "colors":
+        print(f"{t}")
+        for rang in e:
+            print(f"          -{rang}")
+    else:
+        print(f"{t} {e}")
 
 
 

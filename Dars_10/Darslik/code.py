@@ -1,15 +1,15 @@
 # 1-masala
-# ball = int(input("Ballingizni kiriting (0-100): "))
-# if 0 <= ball <=54:
-#     print("Sizning ballingiz: 2")
-# elif 55 <= ball <= 69:
-#     print("Sizning ballingiz: 3")
-# elif 70 <= ball <= 84:
-#     print("Sizning ballingiz: 4")
-# elif 85 <= ball <= 100:
-#     print("Sizning ballingiz: 5")
-# else:
-#     print(f"{ball}-notog'ri qiymat!")
+ball = int(input("Ballingizni kiriting (0-100): "))
+if 0 <= ball <=54:
+    print("Sizning ballingiz: 2")
+elif 55 <= ball <= 69:
+    print("Sizning ballingiz: 3")
+elif 70 <= ball <= 84:
+    print("Sizning ballingiz: 4")
+elif 85 <= ball <= 100:
+    print("Sizning ballingiz: 5")
+else:
+    print(f"{ball}-notog'ri qiymat!")
 
 
 
