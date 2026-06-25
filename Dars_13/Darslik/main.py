@@ -1,12 +1,12 @@
 # 1-masala
-# text = input("Matin kiriting: ")
-# soz = text.split()
-# soz_lugat = {}
+text = input("Matin kiriting: ")
+soz = text.split()
+soz_lugat = {}
 
-# for word in soz:
-#     soz_lugat[word] = soz_lugat.get(word, 0) + 1
+for word in soz:
+    soz_lugat[word] = soz_lugat.get(word, 0) + 1
 
-# print(soz_lugat)
+print(soz_lugat)
 
 
 
