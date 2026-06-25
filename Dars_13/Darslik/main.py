@@ -1,12 +1,16 @@
 # 1-masala
-text = input("Matin kiriting: ")
-soz = text.split()
-soz_lugat = {}
+# text = input("Matin kiriting: ")
+# soz = text.split()
+# soz_lugat = {}
 
-for word in soz:
-    soz_lugat[word] = soz_lugat.get(word, 0) + 1
 
-print(soz_lugat)
+
+# for word in soz:
+#     soz_lugat[word] = soz_lugat.get(word, 0) + 1
+
+# print(soz_lugat)
+
+
 
 
 
@@ -76,3 +80,45 @@ print(soz_lugat)
 #     x[key] = x.get(key,0) + qiymat
 
 # print(x)
+
+
+
+
+
+
+
+# 6-masala 
+# sonlar = [1, 2, 2, 3, 3, 3, 4]
+# noyob = list(set(sonlar))
+
+# print(noyob)
+
+
+
+
+
+'''
+MASALA 
+========================================
+Quyidagi lug'at berilgan:
+students = {
+    "Ali": ["Python", "Django", "HTML", "CSS", "Python"],
+    "Vali": ["HTML", "CSS"],
+    "Zarina": ["Python", "Django", "JavaScript", "HTML"],
+    "Madina": ["Python", "Python", "Django", "HTML", "CSS", "JavaScript"]
+}
+Vazifa:
+Har bir o'quvchi nechta noyob kurs o'qiyotganini toping.
+Natijani yangi lug'atga saqlang.
+Eng ko'p noyob kurs o'qiyotgan o'quvchini toping.
+Agar bir nechta o'quvchida bir xil maksimal qiymat bo'lsa, birinchisini chiqarish kifoya.
+
+Natija:
+
+Ali -> 4 ta kurs
+Vali -> 2 ta kurs
+Zarina -> 4 ta kurs
+Madina -> 4 ta kurs
+
+Eng faol o'quvchi: Ali (4 ta kurs)
+'''
